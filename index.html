@@ -1,0 +1,352 @@
+<style>
+.top-info {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  width: 100%;
+  font: 600 12px Inter, sans-serif;
+  justify-content: center;
+  padding: 1px 0;
+}
+
+.top-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 49px;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 19px 57px;
+}
+
+.schedule-info {
+  position: relative;
+  align-self: start;
+  display: flex;
+  gap: 40px;
+  color: rgb(146, 146, 143);
+}
+
+.contact-info {
+  display: flex;
+  gap: 5px;
+  font-size: 11px;
+  color: rgb(147, 146, 145);
+}
+
+.icon {
+  aspect-ratio: 1.3;
+  object-fit: contain;
+  width: 13px;
+  align-self: start;
+}
+
+.location-phone {
+  position: relative;
+  display: flex;
+  gap: 40px;
+}
+
+.location {
+  display: flex;
+  gap: 9px;
+  font-size: 11px;
+  color: rgb(148, 149, 148);
+  flex: 1;
+}
+
+.phone {
+  align-self: start;
+  display: flex;
+  gap: 9px;
+  font-size: 12px;
+  color: rgb(146, 148, 148);
+}
+
+.header {
+  background: rgb(254, 254, 254);
+  min-height: 98px;
+  width: 100%;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+  min-height: 974px;
+  margin-top: -97px;
+  width: 100%;
+  padding-top: 96px;
+}
+
+.nav-section {
+  position: relative;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  font: 600 12px Inter, sans-serif;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 35px 60px;
+}
+
+.logo {
+  display: flex;
+  gap: 6px;
+  font-size: 20px;
+  color: rgb(73, 73, 73);
+}
+
+.nav-links {
+  align-self: start;
+  display: flex;
+  margin-top: 8px;
+  gap: 33px;
+  flex-wrap: wrap;
+}
+
+.nav-items {
+  display: flex;
+  gap: 34px;
+}
+
+.active-link {
+  color: rgb(109, 195, 207);
+}
+
+.nav-link {
+  color: rgb(86, 86, 86);
+}
+
+.dropdown {
+  align-self: start;
+  display: flex;
+  gap: 5px;
+  color: rgb(80, 80, 80);
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  padding: 1px 80px 1px 0;
+}
+
+.hero-content {
+  gap: 20px;
+  display: flex;
+}
+
+.hero-image {
+  aspect-ratio: 0.84;
+  object-fit: contain;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.hero-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font: 600 57px Inter, sans-serif;
+  margin: auto 0;
+}
+
+.hero-heading {
+  color: rgb(25, 27, 26);
+}
+
+.highlight-text {
+  color: rgb(62, 190, 214);
+  margin: 31px 32px 0 16px;
+}
+
+.sub-heading {
+  color: rgb(55, 188, 213);
+  font-size: 55px;
+  align-self: start;
+  margin: 37px 0 0 17px;
+}
+
+.description {
+  color: rgb(103, 116, 99);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 25px 31px 0 0;
+}
+
+.cta-button {
+  background: rgb(36, 186, 217);
+  width: 229px;
+  color: rgb(142, 224, 235);
+  padding: 18px 70px;
+  border: 1px solid rgb(56, 181, 203);
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.services-grid {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.service-card {
+  background: rgb(36, 186, 216);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 52px 63px 12px;
+  border: 1px solid rgb(45, 184, 213);
+  color: rgb(161, 228, 237);
+  font: 600 19px Inter, sans-serif;
+}
+
+.service-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: 70px;
+}
+
+.service-title {
+  margin-top: 26px;
+}
+
+@media (max-width: 991px) {
+  .top-info-wrapper {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    margin-top: 24px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .hero-heading {
+    font-size: 40px;
+  }
+
+  .highlight-text {
+    font-size: 40px;
+    margin-right: 10px;
+  }
+
+  .sub-heading {
+    font-size: 40px;
+    margin-left: 10px;
+  }
+
+  .description {
+    max-width: 100%;
+    margin-right: 10px;
+  }
+
+  .cta-button {
+    padding: 0 20px;
+  }
+
+  .services-grid {
+    flex-direction: column;
+  }
+
+  .service-card {
+    padding: 0 20px;
+  }
+}
+</style>
+
+<section class="top-info">
+  <div class="top-info-wrapper">
+    <div class="schedule-info">
+      <span>Mon-Sat at 9:00 Am to 8:00 Pm</span>
+      <div class="contact-info">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ee3b96c352fd1ae63036eb8cb06146d2649192faf963a3d823a9d8b42dae4e4d?apiKey=1647342b319f4684a38cddac79fbdc4e&" alt="" class="icon" />
+        <span>protection@support.com</span>
+      </div>
+    </div>
+    <div class="location-phone">
+      <div class="location">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/aa1c5b8c617b341509d32686fb735a711a9e030fc6e7b3d5a492eb619b827c35?apiKey=1647342b319f4684a38cddac79fbdc4e&" alt="" class="icon" />
+        <span>PO Box 16122, Collins Street West Victoria 8007</span>
+      </div>
+      <div class="phone">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/709ccf60559e8abae059e868775517fef1424ca7dbbc58b0ebaee28087283a90?apiKey=1647342b319f4684a38cddac79fbdc4e&" alt="" class="icon" />
+        <span>(+00)123-789-456</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<header class="header"></header>
+
+<main class="main-content">
+  <nav class="nav-section">
+    <div class="logo">
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/84713b19293d9bac03d6db35928833059e7a6ac9d886d6d6849d989f3e2fe8c5?apiKey=1647342b319f4684a38cddac79fbdc4e&" alt="Medicative Logo" class="icon" />
+      <span>Medicative</span>
+    </div>
+    <div class="nav-links">
+      <div class="nav-items">
+        <a href="#" class="active-link">HOME</a>
+        <a href="#" class="nav-link">ABOUT US</a>
+        <a href="#" class="nav-link">SERVICES</a>
+        <a href="#" class="nav-link">DOCTORS</a>
+        <a href="#" class="nav-link">GALLERY</a>
+        <a href="#" class="nav-link">BLOG</a>
+      </div>
+      <div class="dropdown">
+        <span>PAGE</span>
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/3f12e7bd14f2d06a792e5c8ad78270591227f8d09e6654ec8d89bdad4680807b?apiKey=1647342b319f4684a38cddac79fbdc4e&" alt="" class="icon" />
+      </div>
+      <a href="#" class="nav-link">CONTACT US</a>
+    </div>
+  </nav>
+
+  <section class="hero-section">
+    <div class="hero-content">
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/19f7a2ffbb147e7052419a73e9d3dd88867d67432154826846f960dba74c112c?apiKey=1647342b319f4684a38cddac79fbdc4e&" alt="Medical Professional" class="hero-image" />
+      <div class="hero-text">
+        <h1 class="hero-heading">THE BEST DOCTOR</h1>
+        <p class="highlight-text">GIVES THE LEAST</p>
+        <p class="sub-heading">MEDICINES</p>
+        <p class="description">
+          Aenean finibus, nunc imperdiet elementum vestibulum nibh lorem intdum lorem, eu.
+        </p>
+        <button class="cta-button">MORE INFO</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-grid">
+    <div class="service-card">
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/35601b1d821246a948fcf50d55d130fe762e7211f479cab461d9ebdf0a1b540f?apiKey=1647342b319f4684a38cddac79fbdc4e&" alt="Emergency Services" class="service-icon" />
+      <h2 class="service-title">Emergency</h2>
+    </div>
+    <div class="service-card">
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/124e3c9226ed5bf6ab3389bdba95abbbc38f9b138b477476643e749d01cd3b88?apiKey=1647342b319f4684a38cddac79fbdc4e&" alt="Qualified Doctors" class="service-icon" />
+      <h2 class="service-title">Qualified Doctors</h2>
+    </div>
+    <div class="service-card">
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/31dd884ed6acd86dd2b6e53575b76b83a62809d179d471d3941e1a31042c7be3?apiKey=1647342b319f4684a38cddac79fbdc4e&" alt="Operation Theater" class="service-icon" />
+      <h2 class="service-title">Operation Theater</h2>
+    </div>
+    <div class="service-card">
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ecc24c2cdb3ef4468a223233989db47c4a32129c0f4f030a60697b9bde78e7b9?apiKey=1647342b319f4684a38cddac79fbdc4e&" alt="Free Medicine" class="service-icon" />
+      <h2 class="service-title">Free Medicine</h2>
+    </div>
+  </section>
+</main>
